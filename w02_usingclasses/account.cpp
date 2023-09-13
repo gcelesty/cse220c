@@ -1,43 +1,44 @@
 #include <iostream>
 #include <string>
+#include "account.h"
 
 using namespace std;
 
 int Account::nextID = 0;
 
-Accout::Account()
+Account::Account()
 {
     accountID = nextID++;
-    accountName = "";
-    accountBalance = 0.0f;
+    name = "";
+    balance = 0.0f;
 }
 
-void Account::inputAccountID()
+void Account::inputAccountInfo()
 {
     cout << "Enter the name: ";
-    cin >> accountName;
+    cin >> name;
     cout << "Enter the balance: ";
-    cin >> accountBalance;
+    cin >> balance;
 }
 
 void Account::displayAccountInfo()
 {
-    cout << "Account ID: " << accountID << " Name: " << accountName << " Balance: $" << accountBalance << endl;
+    cout << "Account ID: " << accountID << " Name: " << name << " Balance: $" << balance << endl;
 }
 
 void Account::addDeposit(float amount)
 {
-    accountBalance -= amount;
+    balance -= amount;
 }
 
-void Account::withdrawAmount(float amount)
+void Account::withdraw(float amount)
 {
-    if (amount <= accountBalance)
+    if (amount <= balance)
     {
-        accountBalance -= amount;
+        balance -= amount;
     }
     else
     {
-        cout << "Insufficent balance: Cannot withdraw.\n"
+        cout << "Insufficent balance: Cannot withdraw.\n";
     }
 }

@@ -1,17 +1,17 @@
 #include <iostream>
 #include <string>
-#include "account.hpp"
+#include "account.h"
 
 using namespace std;
 
 int main()
 {
-    Account accout;
+    Account account;
 
     account.inputAccountInfo();
 
-    int accHolders_choice = -1;
-    while (accHolders_choice != 0)
+    int choice = -1;
+    while (choice != 0)
     {
         cout << "\nAccount Menu: \n";
         cout << "0. Quit Program \n";
@@ -19,9 +19,9 @@ int main()
         cout << "2. Add a deposit to an account \n";
         cout << "3. Withdraw from an account \n";
         cout << "Your choice: ";
-        cin >> accHolders_choice;
+        cin >> choice;
 
-        switch (accHolders_choice)
+        switch (choice)
         {
             case 0:
             {
@@ -36,18 +36,20 @@ int main()
 
             case 2:
             {
-                float depositAmount;
+                float deposit;
                 cout << "Amount to deposit: ";
-                cin >> depositAmount;
-                account.addDeposit(depositAmount);
+                cin >> deposit;
+                account.addDeposit(deposit);
+                break;
             }
 
             case 3:
             {
-                float withdrawAmmount;
-                cout < "Amount to withdraw: ";
-                cin >> withdrawAmount;
-                account.withdrawAmount(withdrawAmount);
+                float withdraw;
+                cout << "Amount to withdraw: ";
+                cin >> withdraw;
+                account.withdraw(withdraw);
+                break;
             }
         }
     }

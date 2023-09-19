@@ -28,7 +28,7 @@ void Account::displayAccountInfo()
 
 void Account::addDeposit(float amount)
 {
-    balance -= amount;
+    balance += amount;
 }
 
 void Account::withdraw(float amount)

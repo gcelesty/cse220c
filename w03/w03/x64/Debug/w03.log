@@ -1,0 +1,10 @@
+﻿  account.cpp
+  main.cpp
+C:\Users\celes\OneDrive\Desktop\cse 220C - c++ lang\cse220c-code\w03\w03\main.cpp(18,20): error C2660: 'Account::displayAccountInfo': function does not take 0 arguments
+C:\Users\celes\OneDrive\Desktop\cse 220C - c++ lang\cse220c-code\w03\w03\account.h(16,9): message : see declaration of 'Account::displayAccountInfo'
+C:\Users\celes\OneDrive\Desktop\cse 220C - c++ lang\cse220c-code\w03\w03\main.cpp(18,20): message : while trying to match the argument list '()'
+C:\Users\celes\OneDrive\Desktop\cse 220C - c++ lang\cse220c-code\w03\w03\main.cpp(39,16): error C2660: 'Account::displayAccountInfo': function does not take 0 arguments
+C:\Users\celes\OneDrive\Desktop\cse 220C - c++ lang\cse220c-code\w03\w03\account.h(16,9): message : see declaration of 'Account::displayAccountInfo'
+C:\Users\celes\OneDrive\Desktop\cse 220C - c++ lang\cse220c-code\w03\w03\main.cpp(39,16): message : while trying to match the argument list '()'
+  Generating Code...
+C:\Users\celes\OneDrive\Desktop\cse 220C - c++ lang\cse220c-code\w03\w03\account.cpp(38): error C4716: 'Account::displayAccountInfo': must return a value
